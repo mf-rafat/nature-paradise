@@ -9,19 +9,68 @@
     <!-- this is daisyui and tailwind cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- this is core css file  -->
+    <!-- this link core css file  -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- this link font awsame  -->
+    <script src="https://kit.fontawesome.com/d12eb56653.js" crossorigin="anonymous"></script>
+
+    <!-- this links google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body  class="adlam-display-regular">
     <!-- this is header section  -->
     <header>
 
         <!-- this part off navigatiion  -->
-        <nav>
-
+        <nav class="navbar bg-base-100 px-4 py-2 flex justify-between items-center">
+            <!-- Left Side (Logo & Brand Name) -->
+            <div class="navbar-start flex items-center gap-2">
+                <img src="./c1-assets/logo-header.png" alt="logo" class="">
+                <a class=" text-xl hidden md:block lg:block ">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+            </div>
+        
+            <!-- Center (Menu for Large Screens) -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+        
+            <!-- Right Side (Hamburger Menu for Mobile & Other Icons) -->
+            <div class="navbar-end flex items-center gap-4">
+                <div class="hidden md:flex gap-4">
+                    <img src="./c1-assets/bell (1) 1.svg" alt="bell-icons">
+                    <img src="./c1-assets/search.svg" alt="search-icons">
+                    <a class="btn btn-outline">Login</a>
+                    <a class="btn bg-[#FFDC26]">Button</a>
+                </div>
+        
+                <!-- Hamburger Menu for Mobile -->
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 absolute">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        
     </header>
 
     <main>
